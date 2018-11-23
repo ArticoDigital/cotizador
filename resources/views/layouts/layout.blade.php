@@ -11,7 +11,7 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon"/>
 </head>
-<body data-site="{{env('APP_URL')}}" id="body" style="background: url({{asset('images/back.png')}})">
+<body data-site="{{env('APP_URL')}}" id="body">
 <header class="">
 </header>
 @yield('content')

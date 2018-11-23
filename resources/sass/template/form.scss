@@ -1,0 +1,46 @@
+
+.banner{
+	background: url('http://localhost/cotizador/public/images/bgBanner.jpg') center top / contain no-repeat;
+	height: 510px;
+}
+.txtWelcome{
+	color: #42210b;
+}
+.container h2 {
+    text-align: center;
+     font-weight: 600 !important;
+    color: #4c4c4c !important;
+    font-size: 24px;
+    margin-bottom:  0px;
+}
+.rowForm{
+	 box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.26);
+}
+.botones-home {
+    background: #F7F7F7;
+    padding: 20px 10px;
+    border: 1px solid #F59200;
+    color: #3E3E3E;
+}
+.botones-home:hover{
+	background: #F59200;
+	color: #fff; 
+	opacity: 1 !important;
+}
+.botones-home:hover .iconService{
+	border-right: 1px solid #fff;
+}
+.iconService{
+	border-right: 1px solid #F59200;	
+}
+.juice{
+	position: absolute;
+    left: -80px;
+    width: 43%;
+    margin-top: 50px;
+    opacity: .3;
+}
+.solutions h3{
+	font-size: 32px;
+	color: #f59200;
+}
