@@ -58,7 +58,7 @@
 				<h2>Arma tu snack</h2>
 				<p class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim, massa sed efficitur mattis, leo orci luctus diam, sed auctor.</p>
 				<form action="" id="formSnackClassic">
-					<div class="row justify-center item">
+					<div class="row justify-center item m-t-20">
 		                <div class="col-16 numberItem is-text-center">
 		                    <p><span>1</span> Elija una entrada</p>
 		                </div>
@@ -75,7 +75,7 @@
 		                	<label for="tradition">Tradicion</label></p>
 		                </div>		                				                
 		            </div>
-		            <div class="row justify-center item">
+		            <div class="row justify-center item m-t-20">
 		                <div class="col-16 numberItem is-text-center">
 		                    <p><span>2</span> Elija una bebida</p>
 		                </div>
@@ -96,7 +96,7 @@
 		                	<label for="yogurth">Yogurt Vaso (150 gr)</label></p>
 		                </div>		                				                
 		            </div>
-		            <div class="row justify-center item">
+		            <div class="row justify-center item m-t-20">
 		                <div class="col-16 numberItem is-text-center">
 		                    <p><span>3</span>Adiciones</p>
 		                </div>
@@ -116,12 +116,12 @@
 		                	
 		                </div>		                				                
 		            </div>
-		            <div class="row justify-evenly item">
+		            <div class="row justify-evenly item m-t-20">
 		                <div class="col-16 numberItem is-text-center">
 		                    <p><span>4</span>Seleccione un servicio</p>
 		                </div>
-		                <div class="col-16 col-m-8 col-l-6">
-		                	<label for="waiter" class="is-text-center">Mesero</label>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="waiter">Mesero</label>
 		                	<select name="waiter" id="waiter">
 		                		<option value="">Refribreak (3 Hr)</option>
 		                		<option value="">Refribreak (6 Hr)</option>
@@ -130,8 +130,8 @@
 		                		<option value="">Profesional (Hora Adicional)</option>
 		                	</select>	
 		                </div>
-		                <div class="col-16 col-m-8 col-l-6">
-		                	<label for="transport" class="is-text-center">Transporte</label>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="transport">Transporte</label>
 		                	<select name="transport" id="transport">
 		                		<option value="">Moto (Cercano - de 0 a 6 Km)</option>
 		                		<option value="">Moto (Mediano - de 7 a 12 Km)</option>
@@ -140,9 +140,36 @@
 		                		<option value="">Carro (Mediano - de 7 a 12 Km)</option>
 		                		<option value="">Carro (Lejano - de 12 Km Dentro de Bogota)</option>	
 		                	</select>	
-		                </div>		                				                
+		                </div>	                 		                				                
 		            </div>
-				</form>
+		            <div class="row justify-evenly item m-t-20">
+						<p>
+							<button type="submit" name="buttom">Valor Estimado</button>	
+						</p>
+		            </div>
+		            <!-- Segunda Pantalla -->
+		            <div class="row justify-evenly item m-t-20">
+						<div class="col-16 col-m-6 col-l-6 is-text-center">
+							<p>Valor Estimado</p>
+							<input type="text" disabled="" name="" value="" id="priceDisabled">
+						</div>
+		            </div>
+		            <div class="row justify-evenly resumen m-t-20">
+		            	<div class="col-l-16 is-text-center is-text-uppercase">
+							<h3>Resumen del pedido</h3>		            		
+		            	</div>
+						<div class="col-16 col-m-14 col-l-14">
+							<ul id="order" class="is-list-less">
+								<li><span>Entrada:</span></li>
+								<li><span>Bebidas:</span></li>
+								<li><span>Adiciones:</span></li>
+								<li><span>Mesero:</span></li>
+								<li><span>Transporte:</span></li>
+							</ul>
+						</div>
+		            </div>
+		            <!-- Segunda Pantalla -->	
+		        </form>
 			</section>	
 			<!-- End Row Form Snack Classsic --> 		
 		</div>		 
