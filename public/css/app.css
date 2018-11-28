@@ -3339,13 +3339,11 @@ button {
   color: #FFFFFF;
 }
 
-button[disabled],
-button[disabled]:hover,
-input[disabled],
-input[disabled]:hover {
-  background: #DCDB21;
-  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455);
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455);
+#priceDisabled {
+  background: #DCDB21 !important;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455) !important;
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455) !important;
+  border: none !important;
   opacity: 1;
   font-style: normal;
   font-weight: 900;
@@ -3369,5 +3367,15 @@ input[disabled]:hover {
   font-weight: bold;
   line-height: normal;
   font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  background: #F7F7F7;
+  border: 1px solid #F59405 !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  border-radius: 0px !important;
 }
 

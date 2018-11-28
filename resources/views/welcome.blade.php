@@ -23,7 +23,7 @@
 
 			<img src="{{asset('/images/juice.jpg')}}" alt="" class="juice">
 		</div>
-		<div class="col-10 p-40 rowForm">
+		<div class="col-10 p-40 rowForm m-b-80">
 			<h2>COTIZACIÓN RÁPIDA</h2>	
 			<p class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim, massa sed efficitur mattis, leo orci luctus diam, sed auctor </p>
 			<a href="" class="row align-center justify-around botones-home is-full-width m-t-20">
@@ -168,6 +168,55 @@
 							</ul>
 						</div>
 		            </div>
+		            <div class="row justify-evenly item m-t-52">
+		                <div class="col-16 is-text-center m-b-32">
+		                    <h2>Datos Personales</h2>
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Cliente</label>
+		                	<input type="text" name="client">
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Nombre quien solicita</label>
+		                	<input type="text" name="name">
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Fecha Entrega</label>
+		                	<input type="date" name="deliverDate">
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Hora Servicio</label>
+		                	<input type="time" name="serviceHour">
+		                </div>	
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Evento</label>
+		                	<input type="text" name="event">
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Dirección</label>
+		                	<input type="text" name="address">
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Teléfono</label>
+		                	<input type="text" name="telephone">
+		                </div>			        
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<label for="">Celular</label>
+		                	<input type="text" name="celphone">
+		                </div>        				                
+		            </div>
+		            <div class="row justify-evenly item m-t-52">
+						<h2>¿Que deseas hacer?</h2>
+						<p class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim, massa sed efficitur mattis, leo orci luctus diam, sed auctor </p>
+		            </div>
+		            <div class="row justify-evenly m-t-20">
+		            	<div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<button type="submit" name="buttom">Cotizar</button>	
+		                </div>
+		                <div class="col-16 col-m-8 col-l-6 is-text-center">
+		                	<button type="submit" name="buttom">Pagar</button>	
+		                </div>
+		            </div>	 		
 		            <!-- Segunda Pantalla -->	
 		        </form>
 			</section>	
