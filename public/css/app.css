@@ -3215,9 +3215,16 @@ table {
   margin: 4rem 0 0;
 }
 
+.relative {
+  position: relative;
+}
+
 .banner {
-  background: url("http://localhost/cotizador/public/images/bgBanner.jpg") center top/contain no-repeat;
-  height: 510px;
+  background: url(/images/bgBanner.jpg?e3b3dc6e0a83198e9f488d24c7e7b184);
+  background-size: cover;
+  height: 30rem;
+  position: absolute;
+  width: 100vw;
 }
 
 .txtWelcome {
@@ -3229,28 +3236,31 @@ table {
   font-weight: 600;
   color: #4c4c4c;
   font-size: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .rowForm {
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.26);
-          box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.26);
+  background: white;
+  margin: 3.6rem 0;
 }
 
-.botones-home {
+.buttons-home {
   background: #F7F7F7;
   padding: 20px 10px;
   border: 1px solid #F59200;
   color: #3E3E3E;
+  cursor: pointer;
 }
 
-.botones-home:hover {
+.buttons-home:hover {
   background: #F59200;
   color: #fff;
   opacity: 1 !important;
 }
 
-.botones-home:hover .iconService {
+.buttons-home:hover .iconService {
   border-right: 1px solid #fff;
 }
 
@@ -3259,16 +3269,35 @@ table {
 }
 
 .juice {
-  position: absolute;
-  left: -80px;
-  width: 43%;
-  margin-top: 50px;
+  margin-top: 12rem;
   opacity: .3;
+  max-width: 90%;
+}
+
+.solutions {
+  display: none;
+}
+
+@media (min-width: 45rem) {
+  .solutions {
+    display: block;
+  }
+}
+
+.solutions p {
+  color: black;
+  padding: 2rem;
+  background: #ffffffbd;
+  margin-right: 2rem;
+  font-size: 1.6rem;
 }
 
 .solutions h3 {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #f59200;
+  padding: 1rem;
+  background: #ffffffbd;
+  margin-right: 2rem;
 }
 
 .formOne h2 {

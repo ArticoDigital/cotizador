@@ -1,130 +1,172 @@
 
-.banner{
-	background: url('http://localhost/cotizador/public/images/bgBanner.jpg') center top / contain no-repeat;
-	height: 510px;
+.banner {
+  background: url('../../images/bgBanner.jpg');
+  background-size: cover;
+  height: 30rem;
+  position: absolute;
+  width: 100vw;
 }
-.txtWelcome{
-	color: #42210b;
+
+.txtWelcome {
+  color: #42210b;
 }
+
 .container h2 {
-    text-align: center;
-     font-weight: 600;
-    color: #4c4c4c;
-    font-size: 24px;
-    margin-bottom: 0px;
+  text-align: center;
+  font-weight: 600;
+  color: #4c4c4c;
+  font-size: 24px;
+  margin-bottom: 0;
 }
-.rowForm{
-	 box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.26);
+
+.rowForm {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.26);
+  background: white;
+  margin: 3.6rem 0;
 }
-.botones-home {
-    background: #F7F7F7;
-    padding: 20px 10px;
-    border: 1px solid #F59200;
-    color: #3E3E3E;
+
+.buttons-home {
+  background: #F7F7F7;
+  padding: 20px 10px;
+  border: 1px solid #F59200;
+  color: #3E3E3E;
+  cursor: pointer;
 }
-.botones-home:hover{
-	background: #F59200;
-	color: #fff; 
-	opacity: 1 !important;
+
+.buttons-home:hover {
+  background: #F59200;
+  color: #fff;
+  opacity: 1 !important;
 }
-.botones-home:hover .iconService{
-	border-right: 1px solid #fff;
+
+.buttons-home:hover .iconService {
+  border-right: 1px solid #fff;
 }
-.iconService{
-	border-right: 1px solid #F59200;	
+
+.iconService {
+  border-right: 1px solid #F59200;
 }
-.juice{
-	position: absolute;
-    left: -80px;
-    width: 43%;
-    margin-top: 50px;
-    opacity: .3;
+
+.juice {
+  margin-top: 12rem;
+  opacity: .3;
+  max-width: 90%;
 }
-.solutions h3{
-	font-size: 32px;
-	color: #f59200;
-}
-.formOne h2 {
-    color: #f59200;
-}
-.numberItem p {
-    position: relative;
-}
-.numberItem p:before {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-        background: rgba(245, 146, 0, 0.10);
-}
-.numberItem p span {
-    background: #F59200;
-    border-radius: 100%;
-    color: #fff;
+
+.solutions {
+  display: none;
+  @include respond-to(medium) {
     display: block;
-    font-weight: bold;
-    line-height: 30px;
-    height: 30px;
-    margin: auto;
-    width: 30px;
+  }
+  p{
+    color: black;
+    padding: 2rem;
+    background: #ffffffbd;
+    margin-right: 2rem;
+    font-size: 1.6rem;
+  }
 }
+
+.solutions h3 {
+  font-size: 3.2rem;
+  color: #f59200;
+  padding: 1rem;
+  background: #ffffffbd;
+  margin-right: 2rem;
+}
+
+.formOne h2 {
+  color: #f59200;
+}
+
+.numberItem p {
+  position: relative;
+}
+
+.numberItem p:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(245, 146, 0, 0.10);
+}
+
+.numberItem p span {
+  background: #F59200;
+  border-radius: 100%;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  margin: auto;
+  width: 30px;
+}
+
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before {
-    background: #f59200;
-    border-color: #f59200;
+  background: #f59200;
+  border-color: #f59200;
 }
-[type=radio] + label:before, [type=checkbox] + label:before{
-	border: 1px solid #f59200;
+
+[type=radio] + label:before, [type=checkbox] + label:before {
+  border: 1px solid #f59200;
 }
-select{
-	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAAbUlEQVQYlY3P2w2DMAyF4S8RMzBFx2EJmm1Yo92GLQI70BciRSSVYskPvhyf3+HafLAYi29EwjGwfCJFZLwHBCtyLFZ3/kUp81g10+3WRSlFLcj14InSE/TQGtRwbc3FGTsCXk/MqYNQozU//QAPUBknXZlgNAAAAABJRU5ErkJggg==');	
-	background-repeat: no-repeat;
-    background-position: calc(100% - 15px);
-    border-radius: 0px;
-    border-color: #f59200;
-    padding-right: 42px;
-    color: #3e3e3e;
+
+select {
+  background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAAbUlEQVQYlY3P2w2DMAyF4S8RMzBFx2EJmm1Yo92GLQI70BciRSSVYskPvhyf3+HafLAYi29EwjGwfCJFZLwHBCtyLFZ3/kUp81g10+3WRSlFLcj14InSE/TQGtRwbc3FGTsCXk/MqYNQozU//QAPUBknXZlgNAAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px);
+  border-radius: 0px;
+  border-color: #f59200;
+  padding-right: 42px;
+  color: #3e3e3e;
 }
-.button, [type=button], [type=reset], [type=submit], button{
-	background: #F59405;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455);
-	border-radius: 8px;
-	font-style: normal;
-	font-weight: 900;
-	line-height: normal;
-	font-size: 20px;
-	text-align: center;
-	color: #FFFFFF;
+
+.button, [type=button], [type=reset], [type=submit], button {
+  background: #F59405;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
-#priceDisabled{
-	background: #DCDB21 !important;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455) !important;
-	border: none !important;
-	opacity: 1;
-	font-style: normal;
-	font-weight: 900;
-	line-height: normal;
-	font-size: 20px;
-	text-align: center;
-	color: #FFFFFF;
+
+#priceDisabled {
+  background: #DCDB21 !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.329455) !important;
+  border: none !important;
+  opacity: 1;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
+
 .resumen {
-    background: #F7F7F7;
-    mix-blend-mode: normal;
-    opacity: 0.7;
-    border: 1px solid #DCDB21;
-    box-sizing: border-box;
-    padding: 10px 0 20px;
+  background: #F7F7F7;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  border: 1px solid #DCDB21;
+  box-sizing: border-box;
+  padding: 10px 0 20px;
 }
+
 #order li span {
-    font-weight: bold;
-    line-height: normal;
-    font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
 }
-input[type="text"], input[type="date"], input[type="time"]{
-	background: #F7F7F7;
-	border: 1px solid #F59405 !important;
-	box-sizing: border-box !important;
-	border-radius: 0px !important;
+
+input[type="text"], input[type="date"], input[type="time"] {
+  background: #F7F7F7;
+  border: 1px solid #F59405 !important;
+  box-sizing: border-box !important;
+  border-radius: 0px !important;
 } 

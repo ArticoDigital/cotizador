@@ -12,8 +12,7 @@
     <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon"/>
 </head>
 <body data-site="{{env('APP_URL')}}" id="body">
-<header class="">
-</header>
+
 @yield('content')
 <script src="{{asset('js/app.js')}}"></script>
 </body>
