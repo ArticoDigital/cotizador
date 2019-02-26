@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Google_Client;
 use Google_Service_Sheets;
+use function GuzzleHttp\Promise\all;
 use Revolution\Google\Sheets\Sheets;
 trait FormTrait
 {
@@ -18,8 +19,12 @@ trait FormTrait
         $sheets = new Sheets();
         $sheets->setService($service);
         $values = $sheets->spreadsheet($id)->sheet($sheet);
+        $cols = ( $values->get()->toArray() );
+        $cols = array_flip( $cols[0] );
+        dd($cols);
         if ($columns)
             $values->majorDimension('columns');
-        return collect($values->all());
+
+        return $values->get();
     }
 }

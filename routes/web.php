@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('w','SheetController@index');
+Route::post('info-products','SheetController@formAll');

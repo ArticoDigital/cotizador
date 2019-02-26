@@ -14,22 +14,17 @@
             <div class="col-16 col-m-10 p-40 rowForm m-b-80">
                 <h2>ARMA TU COTIZACIÓN</h2>
                 <p class="m-t-20">Elige el snack que más se acomode a tu necesidades </p>
-            @include('components.menu')
-            <!-- Init Row Form Snack Classsic -->
+                @include('components.menu')
                 <section class="formOne m-t-32 is-hidden ">
                     <h2>Arma tu snack</h2>
                     <p class="m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim, massa sed
                         efficitur mattis, leo orci luctus diam, sed auctor.</p>
-                    <form action="" id="formSnackClassic" >
-
-                    @include('components.form-quotation')
-                    <!-- Segunda Pantalla -->
-
-                    @include('components.form-data')
-                    <!-- Segunda Pantalla -->
+                    <form action="" id="formSnackClassic">
+                        @csrf
+                        @include('components.form-quotation')
+                        @include('components.form-data')
                     </form>
                 </section>
-                <!-- End Row Form Snack Classsic -->
             </div>
         </div>
 
