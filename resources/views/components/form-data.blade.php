@@ -1,6 +1,7 @@
 <div class="row justify-evenly item m-t-20">
     <div class="col-16 col-m-6 col-l-6 is-text-center">
         <p>Valor Estimado</p>
+        <input type="hidden" name="price" id="price">
         <input type="text" disabled="" name="" value="" id="priceDisabled">
     </div>
 </div>

@@ -58,7 +58,8 @@
   @include respond-to(medium) {
     display: block;
   }
-  p{
+
+  p {
     color: black;
     padding: 2rem;
     background: #ffffffbd;
@@ -146,7 +147,7 @@ select {
   line-height: normal;
   font-size: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #333333;
 }
 
 .resumen {
@@ -164,9 +165,69 @@ select {
   font-size: 14px;
 }
 
-input[type="text"], input[type="date"], input[type="time"] {
+input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
   background: #F7F7F7;
   border: 1px solid #F59405 !important;
   box-sizing: border-box !important;
   border-radius: 0px !important;
-} 
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ff9300;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0.0)
+  }
+  50% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: #0a0a0adb;
+  display: none;
+
+  &.open {
+    display: flex;
+  }
+}

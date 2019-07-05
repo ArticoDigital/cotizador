@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Google_Client;
 use Google_Service_Sheets;
 use function GuzzleHttp\Promise\all;
 use Revolution\Google\Sheets\Sheets;
+
 trait FormTrait
 {
     function sheet($sheet, $columns = false)
@@ -19,12 +21,16 @@ trait FormTrait
         $sheets = new Sheets();
         $sheets->setService($service);
         $values = $sheets->spreadsheet($id)->sheet($sheet);
-        $cols = ( $values->get()->toArray() );
-        $cols = array_flip( $cols[0] );
-        dd($cols);
+
         if ($columns)
             $values->majorDimension('columns');
 
-        return $values->get();
+        $rows = $values->get();
+        $newRows = [];
+        foreach ($rows as $row) {
+            $key = array_slice($row, 0,1) ;
+            $newRows[$key[0]] =  array_slice($row, 1);
+        }
+        return $newRows;
     }
 }

@@ -11,13 +11,11 @@ class SheetController extends Controller
 
     public function index()
     {
-        $c =  $this->sheet('ejecutivo!A1:02000', true);
-
-        dd($c);
+        $c =  $this->sheet('estandar', true);
     }
 
     public function formAll(Request $request)
     {
-        return $this->sheet($request->form . '!A1:02000', true);
+        return $this->sheet($request->input('formName'), true);
     }
 }

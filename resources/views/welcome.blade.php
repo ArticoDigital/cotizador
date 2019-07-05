@@ -29,5 +29,10 @@
         </div>
 
     </div>
-
+    <div class="loader is-full-screen row justify-center middle-items">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
 @endsection
